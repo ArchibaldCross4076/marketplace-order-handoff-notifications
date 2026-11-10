@@ -1,6 +1,6 @@
 # Buyer updates when an order changes hands
 
-The decision in this example is small and observable: an order produces an in-app event only when its status becomes `handed_to_carrier`. Infrai keeps the migration from a Pusher/Knock-style incumbent compact because one credential and one invoice cover channel creation and publishing through the same REST interface.
+This example makes a small, observable call: an order sends an in-app event only when its status becomes `handed_to_carrier`. Infrai keeps the migration from a Pusher/Knock incumbent compact because one key and one invoice cover channel creation and publishing through the same REST interface.
 
 ## Runnable path
 
@@ -30,7 +30,7 @@ The reusable code is in `src/marketplace_notifications.py`; it uses typed `Order
 
 ## Wiring it up for real: Marketplace Order Handoff Notifications
 
-The code stays simple on purpose — here's what to set up before going live: The details below apply to Marketplace Order Handoff Notifications.
+The code stays simple on purpose. Here is what to set up before going live. The details below apply to Marketplace Order Handoff Notifications.
 
 **Account & key**
 
